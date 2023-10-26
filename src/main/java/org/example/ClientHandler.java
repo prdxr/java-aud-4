@@ -1,12 +1,11 @@
 package org.example;
 
-import java.awt.image.ImagingOpException;
 import java.io.*;
 import java.net.Socket;
 import java.util.Objects;
 
 public class ClientHandler implements Runnable {
-    private Socket clientSocket;
+    private final Socket clientSocket;
     private BufferedReader in;
     private BufferedWriter out;
     private final ChatLog chatLog;
